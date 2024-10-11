@@ -1,0 +1,105 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f2f5;
+}
+
+.profile-card, .placeholder-card {
+    display: none;
+    margin-top: 20px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 300px; /* Fixed width for the profile card */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+.profile-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card .card-body {
+    text-align: center;
+}
+
+.profile-card .card-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile-card .card-text {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.description {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.placeholder-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.content-box {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.content-box h1 {
+    margin-bottom: 20px;
+}
+
+#loadingSpinner {
+    justify-content: center;
+    align-items: center;
+}
